@@ -61,7 +61,6 @@ fun searchForZero(world: Array<Array<Int>>): Array<Array<Int>> {
 }
 
 fun fillIsland(world: Array<Array<Int>>, row: Int, col: Int) {
-
     // our visited island cells, don't revisit these
     val visited: HashSet<String> = HashSet()
 
@@ -96,10 +95,8 @@ fun fillIsland(world: Array<Array<Int>>, row: Int, col: Int) {
             list.add(Pair(currentCell.first, currentCell.second - 1))
         }
     }
-
     // paint the island cells that we found, these are enclosed in the island
     for(cell in toPaint) {
         world[cell.first][cell.second] = 1
     }
-
 }
