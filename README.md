@@ -25,6 +25,10 @@ Input 3   0utput 3
 [1,0,1,1]  [1,0,1,1]
 [1,1,1,1]  [1,1,1,1]
 
+This will have a time complexity of N x K. In the worst case, we have to iterate over every N cells in the world and 
+for each world cell, we then have to check K world cells at that point to fill the island. 
+Space complexity is 3N -> N for holding the visited cells, our stack holding the current cells to check and the areas to paint.  
+
 input
 1101
 1101
