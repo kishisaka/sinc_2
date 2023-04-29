@@ -1,3 +1,5 @@
+<pre>
+
 input
 1101
 1101
@@ -52,3 +54,5 @@ output
 ---------------------------
 
 Process finished with exit code 0
+
+</pre>
